@@ -7,7 +7,7 @@ export const getAllBooks = async (_: Request,res: Response) => {
 
 
     const books = await Book.findAll();
-
+    console.log("hi")
     res.json(books);
 }
 
